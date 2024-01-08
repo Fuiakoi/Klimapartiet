@@ -1,0 +1,19 @@
+extends layout
+
+block content
+  h1 Velkommen til Klimapartiets beskeder!
+  p Her kan du se hvad vi slår op
+  table
+    thead
+      tr
+        th Sender
+        th Recipient
+        th Time
+        th Besked
+    tbody
+      each besked in beskeder
+        tr
+          td= besked.from
+          td= besked.to
+          td= besked.createdAt
+          td= besked.message

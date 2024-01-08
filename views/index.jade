@@ -1,0 +1,22 @@
+extends layout
+
+block content
+  h1 Klimapartiet - Det grønne valg
+  p Lorem ipsum dolor sit amet, consectetur adipiscing elit
+  p Lorem ipsum dolor sit amet, consectetur adipiscing elit
+
+  form.w3-half(id="form", action="/login", method="POST")
+    label(for="username") Brugernavn:
+    input(type="text", id="username", name="username")
+
+    label(for="password") Password:
+    input(type="password", id="password", name="password")
+
+    input(type="submit", value="Login")
+
+  br
+  br
+  br
+  br
+  a.button(href="/beskeder") beskeder
+  a.button(href="/registrer") registrer

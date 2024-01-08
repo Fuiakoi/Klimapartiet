@@ -1,0 +1,18 @@
+extends layout
+
+block content
+    h1= title
+    p Welcome to #{title}
+    p registrer
+
+    form(id="form", action="/registrer", method="POST")
+        label(for="name") Navn:
+        input(type="text", id="name", name="name")
+
+        label(for="email") E-mailadresse:
+        input(type="email", id="email", name="email")
+
+        label(for="birthday") Fødselsdagsdato:
+        input(type="date", id="birthday", name="birthday")
+
+        input(type="submit", value="Registrer")
